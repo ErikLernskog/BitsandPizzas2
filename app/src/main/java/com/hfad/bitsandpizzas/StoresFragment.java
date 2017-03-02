@@ -1,7 +1,4 @@
-package layout;
-
-import android.app.ListFragment;
-
+package com.hfad.bitsandpizzas;
 
 import android.app.ListFragment;
 import android.os.Bundle;
@@ -9,16 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
-
-import com.hfad.bitsandpizzas.R;
 
 public class StoresFragment extends ListFragment {
 
     public StoresFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

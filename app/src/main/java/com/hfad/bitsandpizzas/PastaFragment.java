@@ -1,5 +1,4 @@
-package layout;
-
+package com.hfad.bitsandpizzas;
 
 import android.app.ListFragment;
 import android.os.Bundle;
@@ -7,9 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
-
-import com.hfad.bitsandpizzas.R;
 
 public class PastaFragment extends ListFragment {
 
@@ -28,5 +24,4 @@ public class PastaFragment extends ListFragment {
         setListAdapter(adapter);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
-
 }
