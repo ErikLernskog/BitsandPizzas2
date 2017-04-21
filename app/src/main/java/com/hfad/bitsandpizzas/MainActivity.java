@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     private ListView drawerList;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
-    private int currentPosition;
+    private int currentPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
                         if (fragment instanceof TopFragment) {
                             currentPosition = 0;
                         }
-                        if (fragment instanceof PizzaFragment) {
+                        if (fragment instanceof PizzaMaterialFragment) {
                             currentPosition = 1;
                         }
                         if (fragment instanceof PastaFragment) {
@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
         Fragment fragment;
         switch(position) {
             case 1:
-                fragment = new PizzaFragment();
+                fragment = new PizzaMaterialFragment();
                 break;
             case 2:
                 fragment = new PastaFragment();
@@ -194,6 +194,7 @@ public class MainActivity extends Activity {
             selectItem(position);
         }
     }
+
 }
 
 
